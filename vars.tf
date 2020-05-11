@@ -31,6 +31,6 @@ variable "windowsOSVersion" {
 
 variable "vmSize" {
     type    = string
-    default = "Standard_A1"
+    default = "Standard_D2s_v3"
     description = "Size of the virtual machine."
 }
