@@ -24,8 +24,8 @@ variable "dnsLabelPrefix" {
 }
 
 variable "windowsOSVersion" {
-    type        = list
-    default     = ["2016-Datacenter","2008-R2-SP1","2012-Datacenter","2012-R2-Datacenter","2016-Nano-Server","2016-Datacenter-with-Containers","2019-Datacenter"]
+    type        = string
+    default     = "19h1-evd"
     description = "The Windows version for the VM. This will pick a fully patched image of this given Windows version."
 }
 
