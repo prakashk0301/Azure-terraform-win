@@ -114,9 +114,9 @@ resource "azurerm_virtual_machine" "avm-01" {
         admin_password  = var.adminPassword
     }
     storage_image_reference {
-        publisher   = "MicrosoftWindowsServer"
-        offer       = "WindowsServer"
-        sku         = var.windowsOSVersion[0]
+        publisher   = "MicrosoftWindowsDesktop"
+        offer       = "Windows-10"
+        sku         = var.windowsOSVersion
         version     = "latest"
     }
     storage_os_disk {
